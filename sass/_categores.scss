@@ -1,0 +1,123 @@
+.categores{
+    background-color: #2B2B2B;
+    padding: 40px 0;
+    &__title{
+        color: #FFF;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    &__cards{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__card-img{
+        display: none;
+    }
+
+    &__card{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 210px;
+        background-image: url(../images/art.png);
+        background-repeat: no-repeat;
+        background-image: cover;
+        background-color: #3B3B3B;
+        border-radius: 20px;
+        &:hover .categores__card-img{
+            width: 100%;
+            backdrop-filter: blur(5px);
+            display: block;
+            justify-content: center;
+            align-items: center;   
+            transition:all 3s;
+
+        }    
+    }
+
+
+
+    &__card-info{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+
+
+    &__card-title{
+        color: #FFF;
+        font-weight: 600;
+        line-height: 22px;
+    }
+}
+
+
+@media (min-width:990px) {
+    .categores{
+        background-color: #2B2B2B;
+        padding: 40px 0;
+        &__title{
+            color: #FFF;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 40px;
+        }
+    
+        &__cards{
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        &__card-img{
+            width: 100%;
+        }
+    
+        &__card{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 316px;
+            background-image: url(../images/art.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: cover;
+            background-color: #3B3B3B;
+            border-radius: 30px;
+            overflow: hidden;
+
+            &:hover .categores__card-img{
+                width: 100%;
+                backdrop-filter: blur(5px);
+                display: block;
+                justify-content: center;
+                align-items: center;   
+                transition:all 3s;
+    
+            }    
+        }
+        &__card-info{
+            padding: 20px;
+        }
+    
+        &__card-title{
+            color: #FFF;
+            font-weight: 600;
+            line-height: 22px;
+        }
+    }
+    
+}
