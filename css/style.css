@@ -5,6 +5,7 @@
   width: 100%;
   padding: 15px 0;
   background-color: #2B2B2B;
+  z-index: 999;
 }
 .header__shrink {
   box-shadow: 0px 0px 10px red;
@@ -533,29 +534,31 @@ button {
   justify-content: center;
   align-items: center;
 }
-.categores__card-img {
-  display: none;
-}
 .categores__card {
   position: relative;
   display: flex;
   flex-direction: column;
   width: 150px;
   height: 210px;
-  background-image: url(../images/art.png);
-  background-repeat: no-repeat;
-  background-image: cover;
   background-color: #3B3B3B;
   border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
 }
-.categores__card:hover .categores__card-img {
+.categores__card:hover .categores__card--icon {
+  top: 0;
+  transition: all 0.9s;
+}
+.categores__card--icon {
+  position: absolute;
   width: 100%;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  display: block;
+  height: 67%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 3s;
+  background-color: rgba(255, 255, 255, 0.3);
+  top: -100%;
+  left: 0;
 }
 .categores__card-info {
   position: absolute;
@@ -568,7 +571,7 @@ button {
   line-height: 22px;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 780px) {
   .categores {
     background-color: #2B2B2B;
     padding: 40px 0;
@@ -583,12 +586,9 @@ button {
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
-  }
-  .categores__card-img {
-    width: 100%;
   }
   .categores__card {
     position: relative;
@@ -596,25 +596,30 @@ button {
     flex-direction: column;
     width: 250px;
     height: 316px;
-    background-image: url(../images/art.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-image: cover;
     background-color: #3B3B3B;
     border-radius: 30px;
     overflow: hidden;
+    cursor: pointer;
   }
-  .categores__card:hover .categores__card-img {
+  .categores__card:hover .categores__card--icon {
+    top: 0;
+    transition: all 0.9s;
+  }
+  .categores__card--icon {
+    position: absolute;
     width: 100%;
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-    display: block;
+    height: 75%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 3s;
+    background-color: rgba(255, 255, 255, 0.3);
+    top: -100%;
+    left: 0;
   }
   .categores__card-info {
-    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
   }
   .categores__card-title {
     color: #FFF;
