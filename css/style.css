@@ -627,6 +627,95 @@ button {
     line-height: 22px;
   }
 }
+.discover {
+  background-color: #2B2B2B;
+}
+.discover__top {
+  display: flex;
+  justify-content: space-between;
+}
+.discover__title {
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.discover__desc {
+  color: #FFF;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+.discover__btn {
+  display: none;
+}
+.discover__cards {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.discover__card {
+  background-color: #3B3B3B;
+  border-radius: 30px;
+  max-width: 330px;
+}
+.discover__card-img {
+  width: 100%;
+}
+.discover__card-info {
+  padding: 20px;
+}
+.discover__card-info .discover__card-title {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 600;
+}
+.discover__card-info .discover__card-avatar {
+  margin-top: 5px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #FFF;
+}
+.discover__card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #858584;
+  margin-top: 25px;
+}
+.discover__card-kripto {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFF;
+}
+
+@media (min-width: 800px) {
+  .discover__card:nth-child(3) {
+    display: none;
+  }
+  .discover__btn {
+    border-radius: 30px;
+    width: 25%;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2B2B;
+    border: 2px solid #A259FF;
+    color: #A259FF;
+  }
+}
+@media (min-width: 1180px) {
+  .discover__card:nth-child(3) {
+    display: block;
+  }
+}
 * {
   margin: 0;
   padding: 0;
