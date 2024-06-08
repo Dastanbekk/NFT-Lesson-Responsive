@@ -1,0 +1,147 @@
+.footer{
+    background-color: #636363;
+    padding: 40px 0;
+
+    &__row{
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0;
+    }
+
+    &__col1{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        color: #CCCCCC;
+        h3{
+            font-size: 22px;
+            color: #FFF;
+            font-weight: 700;
+            line-height: 35px;
+        }
+    }
+
+
+
+    &__list{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        a:hover{
+            padding-left: 5px;
+            color: #A259FF;
+            transition: all 0.7s;
+        }
+    }
+
+    &-form{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        input{
+            padding: 12px  0 12px 20px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            color: #191919;
+            &::placeholder{
+                color: #191919;
+            }
+        }
+        button{
+            padding: 12px 0;
+            background-color: #A259FF;
+            color: #FFFF;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            justify-content: center;
+            border: 2px solid transparent;
+            &:hover{
+                background-color: transparent;
+                border: 2px solid #A259FF;
+            }
+        }
+    }
+
+    &__bottom{
+        margin-top: 30px;
+        border-top: 1px solid #3B3B3B;
+        p{
+            color: #3B3B3B;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+@media (min-width:834px) {
+    .footer{
+        background-color: #2b2b2b;
+        padding: 40px 0;
+    
+        &__row{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            gap: 30px 31px;
+        }
+    
+        &__col1{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            color: #CCCCCC;
+            h3{
+                font-size: 22px;
+                color: #FFF;
+                font-weight: 700;
+                line-height: 35px;
+            }
+        }
+    
+    
+    
+        &__list{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        &-form{ margin-top: 40px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            input{
+                width: 425px;
+                padding: 19px  0 19px 20px;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                color: #191919;
+                &::placeholder{
+                    color: #191919;
+                }
+            }
+            button{
+                margin-left: -170px;
+                padding: 19px 30px;
+                background-color: #A259FF;
+                color: #FFFF;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                justify-content: center;
+                border: 2px solid transparent;
+
+            }
+        }
+    }
+}
