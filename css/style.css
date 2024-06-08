@@ -629,6 +629,7 @@ button {
 }
 .discover {
   background-color: #2B2B2B;
+  padding: 40px 0;
 }
 .discover__top {
   display: flex;
