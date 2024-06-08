@@ -1,0 +1,174 @@
+.digest{
+    background-color: #2B2B2B;
+    padding: 40px 0;
+    &__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-title{
+            font-size: 28px;
+            color: #FFFF;
+            line-height: 40px;
+            font-weight: 600;
+        }
+        &-desc{
+            font-size: 16px;
+            color: #FFFF;
+            line-height: 22px;
+        }
+        &-form{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            input{
+                padding: 12px  0 12px 20px;
+                border-radius: 20px;
+                border: none;
+                outline: none;
+                font-size: 16px;
+                color: #191919;
+                &::placeholder{
+                    color: #191919;
+                }
+            }
+            button{
+                padding: 12px 0;
+                background-color: #A259FF;
+                color: #FFFF;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                justify-content: center;
+                border: 2px solid transparent;
+
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:834px) {
+    .digest{
+        background-color: #2B2B2B;
+        padding: 40px 0;
+        &__card{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color: #3b3b3b;
+            padding: 40px 30px;
+            border-radius: 30px;
+            &-title{
+                font-size: 28px;
+                color: #FFFF;
+                line-height: 40px;
+                font-weight: 600;
+            }
+            &-desc{
+                font-size: 16px;
+                color: #FFFF;
+                line-height: 22px;
+            }
+            &-form{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                input{
+                    padding: 12px  0 12px 20px;
+                    border-radius: 20px;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    color: #191919;
+                    &::placeholder{
+                        color: #191919;
+                    }
+                }
+                button{
+                    padding: 12px 0;
+                    background-color: #A259FF;
+                    color: #FFFF;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    justify-content: center;
+                    border: 2px solid transparent;
+    
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media (min-width:992px) {
+    .digest{
+        background-color: #2B2B2B;
+        padding: 40px 0;
+        &__card{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color: #3b3b3b;
+            padding: 60px 60px;
+            border-radius: 30px;
+            &-title{
+                font-size: 38px;
+                color: #FFFF;
+                line-height: 40px;
+                font-weight: 600;
+                max-width: 325px;
+            }
+            &-desc{
+                font-size: 22px;
+                color: #FFFF;
+                line-height: 22px;
+                max-width: 425px    ;
+                margin-top: 10px;
+            }
+            &-form{
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                input{
+                    width: 425px;
+                    padding: 19px  0 19px 20px;
+                    border-radius: 20px;
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    color: #191919;
+                    &::placeholder{
+                        color: #191919;
+                    }
+                }
+                button{
+                    margin-left: -170px;
+                    padding: 19px 30px;
+                    background-color: #A259FF;
+                    color: #FFFF;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    justify-content: center;
+                    border: 2px solid transparent;
+    
+                }
+            }
+        }
+    }
+    
+}
