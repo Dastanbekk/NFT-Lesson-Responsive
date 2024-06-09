@@ -8,6 +8,7 @@
         width: 100%;
     }
 
+
     &__globalImg2{
         display: none;
     }
@@ -33,6 +34,7 @@
         display: grid;
         grid-template-columns: 1;
         gap: 15px;
+        padding-bottom: 40px;
         input{
             padding: 12px 40px;
             border-radius: 20px;
@@ -75,6 +77,11 @@
             width: 100%;
         }
 
+        &__botom{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
         &__in{
             display: grid;
             grid-template-columns: auto auto;
@@ -97,6 +104,11 @@
 
         &__globalImg3{
             display: block;
+        }
+
+        &__botom{
+            margin-top: 0px;
+            margin-bottom: 0px;
         }
 
         &__in{
