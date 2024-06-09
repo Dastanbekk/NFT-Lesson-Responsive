@@ -1,0 +1,119 @@
+@import './header';
+@import './footer';
+
+.auth{
+    color: #FFF;
+    background-color: #2b2b2b;
+    &__globalImg{
+        width: 100%;
+    }
+
+    &__globalImg2{
+        display: none;
+    }
+
+    &__globalImg3{
+        display: none;
+    }
+
+    &__title{
+        margin-top: 30px;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 45px;
+    }
+    &__desc{
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &__form{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1;
+        gap: 15px;
+        input{
+            padding: 12px 40px;
+            border-radius: 20px;
+            outline:none;
+            border: none;
+            &::placeholder{
+                color: #191919;
+            }
+        }
+
+        &-btn{
+            padding: 12px;
+            border-radius: 20px;
+            background-color: #A259FF;
+            color: #FFF;
+            border: 2px solid transparent;
+            &:hover{
+                background-color: transparent;
+                border: 2px solid #A259FF;
+                color: #A259FF;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:700px) {
+    .auth{
+        &__globalImg{
+            display: none;
+
+        }
+        &__globalImg3{
+            display: none;
+        }
+        &__globalImg2{
+            display: block;
+            height: 100vh;
+            width: 100%;
+        }
+
+        &__in{
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+        }
+    }
+}
+
+@media (min-width:1000px) {
+    .auth{
+        &__globalImg{
+            display: none;
+
+        }
+
+        &__globalImg2{
+            display: none;
+
+        }
+
+        &__globalImg3{
+            display: block;
+        }
+
+        &__in{
+            display: grid;
+            grid-template-columns: auto auto 10%;
+            align-items: center;
+        }
+        &__title{
+            margin-top: 30px;
+            font-size: 51px;
+            font-weight: 600;
+            line-height: 56px;
+        }
+        &__desc{
+            margin-top: 20px;
+            font-size: 22px;
+            line-height: 35px;
+        }
+    }
+}
