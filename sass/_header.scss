@@ -57,6 +57,9 @@
             border: 2px solid #A259FF;
         }
     }
+    &__item:nth-child(4){
+        display: block;
+    }
 }
 
 
@@ -78,7 +81,7 @@
             display: flex;
         }
         &__item:nth-child(4){
-            display: none;
+            display: block;
         }
     }
 }

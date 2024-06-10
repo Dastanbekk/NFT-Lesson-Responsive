@@ -1,0 +1,218 @@
+.nft{
+    background-color: #2b2b2b;
+    color: #FFF;
+    &__top-img{
+        img{
+            width: 100%;
+        }
+    }
+    &__title{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    &__desc{
+        font-size: 16px;
+        color: #858584;
+        margin-top: 10px;
+    }
+
+    &__watch{
+        margin-top: 20px;
+        padding: 30px;
+        width: 100%;
+        background-color: #3b3b3b;
+        border-radius: 20px;
+
+
+    }
+    &__texts-desc{
+        margin-top: 20px;
+        color: #858584;
+    }
+
+    &__texts-paragraph{
+        margin-top: 20px;
+    }
+
+    &__avatar{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #FFF;
+
+    }
+
+    &__details{
+        margin-top: 10px;
+        display: grid;
+        grid-row: 2;
+        gap: 12px   ;
+        span{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+
+    &__watching{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        margin-top: 15px;
+        h3{
+            font-size: 38px;
+
+        }
+        p{
+            font-size: 12px;
+        }
+        span{
+            font-size: 28px;
+        }
+    }
+    &__wath-btn{
+        display: flex;
+        width: 100%;
+        padding: 19px 0;
+        background-color: #A259FF;
+        justify-content: center;
+        border: 2px solid transparent;
+        color: #FFF;
+        border-radius: 20px;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    &__bottom-list{
+        display: grid;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    &__bottom-link{
+        padding: 12px 30px;
+        background-color: #3b3b3b;
+        border-radius: 20px;
+        color: #FFF;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__right{
+        display: none;
+    }
+}
+
+
+
+@media (min-width:700px){
+    .nft{
+        &__in{
+            display: grid;
+            grid-template-columns: 365px auto;
+            justify-content: space-between;
+        }
+        &__left-watch{
+            display: none;
+        }
+        &__right{
+            display: block;
+        }
+
+        &__watch-btn{
+            display: flex;
+            max-width: 365px;
+            padding: 19px 0;
+            background-color: #A259FF;
+            justify-content: center;
+            border: 2px solid transparent;
+            color: #FFF;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        &__watch{
+            margin-top: 20px;
+            padding: 30px;
+            width: 365px;
+            background-color: #3b3b3b;
+            border-radius: 20px;
+    
+    
+        }
+        &__title{
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 40px;
+        }
+        &__desc{
+            font-size: 16px;
+            color: #858584;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+@media (min-width:900px){
+    .nft{
+        &__in{
+            display: grid;
+            grid-template-columns: 605px auto;
+            justify-content: space-between;
+        }
+        &__left-watch{
+            display: none;
+        }
+        &__right{
+            display: block;
+        }
+
+        &__watch-btn{
+            display: flex;
+            max-width: 365px;
+            padding: 19px 0;
+            background-color: #A259FF;
+            justify-content: center;
+            border: 2px solid transparent;
+            color: #FFF;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        &__watch{
+            margin-top: 20px;
+            padding: 30px;
+            width: 365px;
+            background-color: #3b3b3b;
+            border-radius: 20px;
+    
+    
+        }
+        &__title{
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 40px;
+        }
+        &__desc{
+            font-size: 22px;
+            color: #858584;
+            margin-top: 10px;
+        }
+        &__details{
+            margin-top: 10px;
+            display: grid;
+            grid-row: 2;
+            gap: 12px;
+            font-size: 22px;
+            span{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+        &__texts-paragraph{
+            font-size: 22px;
+        }
+    }
+}
