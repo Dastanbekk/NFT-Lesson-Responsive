@@ -77,5 +77,8 @@
         &__right--btn{
             display: flex;
         }
+        &__item:nth-child(4){
+            display: none;
+        }
     }
 }
