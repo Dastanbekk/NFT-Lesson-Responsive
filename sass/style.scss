@@ -1,19 +1,19 @@
-@import './_navbar';
-@import './header';
-@import './reset';
-@import './hero';
-@import './navbar';
-@import './creators';
-@import './categores';
-@import './discover';
-@import './works';
-@import './digest';
-@import './footer';
-@import './magic';
-@import './auth';
-@import './artist';
-@import './nft';
-@import './connect';
+@import './pages/navbar';
+@import './Layout/header';
+@import './base/reset';
+@import './pages/hero';
+@import './pages/creators';
+@import './pages/categores';
+@import './pages/discover';
+@import './pages/works';
+@import './pages/digest';
+@import './Layout/footer';
+@import './pages/magic';
+@import './pages/auth';
+@import './pages/artist';
+@import './pages/nft';
+@import './pages/connect';
+@import './abstract/mixins';
 
 
 *{
