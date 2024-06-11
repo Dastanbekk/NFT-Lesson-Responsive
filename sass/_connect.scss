@@ -1,0 +1,197 @@
+.connect{
+    background-color: #2B2B2B;
+    padding: 40px 0;
+    color: #FFF;
+    border-bottom: 1px solid #858584;
+
+    &__title{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    &__desc{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    &__input{
+        display: flex;
+        align-items: center;
+        border: 1px solid #858584;
+        padding: 19px 20px;
+        border-radius: 20px;
+        input{
+            width: 90%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: 16px;
+            font-weight: 600;
+            color: #FFF;
+            &::placeholder{
+                color: #858584;
+                border: none;
+            }
+        }
+    }
+
+}
+
+
+
+.discover{
+    &__top{
+        display: flex;
+        justify-content: center;
+    }
+    &__top-links{
+        display: flex;
+    }
+    &__top-link{
+        padding: 19px 59px;
+        font-size: 16px;
+        color: #858584;
+        &:hover{
+            color: #FFF;
+            border-bottom: 1px solid #FFF;
+        }
+    }
+}
+
+
+@media (min-width:700px) {
+    .connect{
+        background-color: #2B2B2B;
+        padding: 40px 0;
+        color: #FFF;
+        border-bottom: 1px solid #858584;
+    
+        &__title{
+            font-size: 38px;
+            font-weight: 600;
+            line-height: 40px;
+        }
+    
+        &__desc{
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+    
+        &__input{
+            display: flex;
+            align-items: center;
+            border: 1px solid #858584;
+            padding: 19px 20px;
+            border-radius: 20px;
+            input{
+                width: 90%;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color: 16px;
+                font-weight: 600;
+                color: #FFF;
+                &::placeholder{
+                    color: #858584;
+                    border: none;
+                }
+            }
+        }
+    
+    }
+    
+    
+    
+    .discover{
+        &__top{
+            display: flex;
+            justify-content: center;
+        }
+        &__top-links{
+            display: flex;
+        }
+        &__top-link{
+            padding: 19px 59px;
+            font-size: 16px;
+            color: #858584;
+            &:hover{
+                color: #FFF;
+                border-bottom: 1px solid #FFF;
+            }
+        }
+    }
+    
+}
+
+
+@media (min-width:992px) {
+    .connect{
+        background-color: #2B2B2B;
+        padding: 40px 0;
+        color: #FFF;
+        border-bottom: 1px solid #858584;
+    
+        &__title{
+            font-size: 51px;
+            font-weight: 600;
+            line-height: 56px;
+        }
+    
+        &__desc{
+            font-size: 22px;
+            line-height: 35px;
+            font-weight: 400;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+    
+        &__input{
+            display: flex;
+            align-items: center;
+            border: 1px solid #858584;
+            padding: 19px 20px;
+            border-radius: 20px;
+            input{
+                width: 97%;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color: 16px;
+                font-weight: 600;
+                color: #FFF;
+                &::placeholder{
+                    color: #858584;
+                    border: none;
+                }
+            }
+        }
+    
+    }
+    .discover{
+        &__top{
+            display: flex;
+            justify-content: center;
+        }
+        &__top-links{
+            display: flex;
+        }
+        &__top-link{
+            padding: 19px 59px;
+            font-size: 22px;
+            line-height: 30px;
+            color: #858584;
+            &:hover{
+                color: #FFF;
+                border-bottom: 1px solid #FFF;
+            }
+        }
+    }
+    
+}
